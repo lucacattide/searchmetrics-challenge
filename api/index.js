@@ -1,20 +1,39 @@
+// GraphQL Server - Configuration
+// JS imports
 const { ApolloServer, gql } = require("apollo-server");
+const KeywordsAPI = require('./KeywordsAPI');
 
+// Types
 const typeDefs = gql`
+  type Term {
+    word: String!
+  }
+  type Category {
+    keywords: [Term]
+  }
   type Query {
-    hello: String
+    getRelatedKeywords(category: String!): Category
   }
 `;
-
+// Resolvers
 const resolvers = {
   Query: {
-    hello: (root, args, context) => "Hello from Searchmetrics!"
+    getRelatedKeywords: async (_source, { category }, { dataSources}) => {
+      return {
+        keywords: dataSources.keywordsAPI.getKeywords(category)
+      }
+    }
   }
 };
-
+// Server
 const server = new ApolloServer({
   typeDefs,
-  resolvers
+  resolvers,
+  dataSources: () => {
+    return {
+      keywordsAPI: new KeywordsAPI()
+    }
+  }
 });
 
 server.listen().then(({ url }) => {

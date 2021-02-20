@@ -1,0 +1,15 @@
+{
+  "short_name": "Searchmetrics Challenge",
+  "name": "Coding Challenge @ Searchmetrics",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#008000",
+  "background_color": "#ffffff"
+}

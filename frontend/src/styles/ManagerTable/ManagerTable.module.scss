@@ -1,0 +1,38 @@
+// SASS Start
+// SASS imports
+@import '../base';
+@import '../App/manager';
+
+// Manager - List section
+.table__row {
+  &:nth-child(even) {
+    background-color: $grey;
+  }
+
+  .row__body {
+    font-size: $font-size-body;
+    justify-content: space-between;
+    padding: 0.5em;
+    width: calc(100% - 1em);
+
+    .body__action_edit {
+      &:hover {
+        color: $orange;
+      }
+    }
+
+    .body__label {
+      display: inline-block;
+      padding: 0 32px 0 0;
+    }
+  }
+
+  .row__body_category {
+    text-transform: capitalize;
+  }
+
+  .row__body_keywords {
+    text-transform: lowercase;
+  }
+}
+// SASS End

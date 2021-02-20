@@ -1,0 +1,20 @@
+// SASS Start
+// Manager - Actions
+.body__action {
+  font-weight: bold;
+  float: right;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: $red;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
+
+.body__action_done {
+  &:hover {
+    color: $green;
+  }
+}
+// SASS End

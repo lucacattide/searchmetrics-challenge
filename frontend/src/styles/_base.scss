@@ -1,0 +1,22 @@
+// SASS Start
+// Variables
+// Colors
+$black: rgba(0, 0, 0, 0.7);
+$green: #008000;
+$grey: #ccc;
+$orange: orange;
+$red: red;
+$white: #fff;
+// Fonts
+$font: Arial, Helvetica, sans-serif;
+$font-size-body: 1.4rem;
+$font-size-button: 1.2rem;
+$font-size-subtitle: 1.6rem;
+$font-size-title: 1.8rem;
+
+// General
+// Interactions
+.disabled {
+  pointer-events: none;
+}
+// SASS End

@@ -1,0 +1,17 @@
+// SASS Start
+// SASS imports
+@import '../base';
+@import '../App/manager';
+
+// Manager - Data input fields
+.body__form .form__field {
+  border-color: $green;
+  border-width: 0 0 2px;
+  font-size: $font-size-body;
+  width: calc(100% - 2em);
+
+  &:focus {
+    outline: none;
+  }
+}
+// SASS End

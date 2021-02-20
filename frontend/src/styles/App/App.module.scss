@@ -1,0 +1,67 @@
+// SASS Start
+// SASS imports
+@import '../base';
+
+// App
+.app {
+  &,
+  &#{__manager} {
+    display: flex;
+  }
+
+  &,
+  &#{__manager} {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &#{__manager} {
+    font-family: $font;
+    width: 62%;
+
+    .manager__actions .actions__button,
+    .manager__table .table__title {
+      color: $white;
+    }
+
+    .manager__actions {
+      margin: 2em 0 0;
+
+      .actions__button {
+        background-color: $green;
+        border: 0;
+        font-size: $font-size-button;
+        outline: none;
+        padding: 0.5em 16px;
+        transition: all 0.3s ease-in-out;
+
+        &:disabled {
+          opacity: 0.7 !important;
+        }
+
+        &:hover {
+          cursor: pointer;
+          opacity: 0.7;
+        }
+      }
+    }
+
+    .manager__table {
+      width: 100%;
+
+      .table__title {
+        background-color: $black;
+        font-size: $font-size-subtitle;
+        padding: 0.5em;
+        width: 50%;
+      }
+    }
+
+    .manager__title {
+      color: $green;
+      font-size: $font-size-title;
+    }
+  }
+}
+
+// SASS End
