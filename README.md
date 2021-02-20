@@ -65,4 +65,4 @@ More details are indicated inside the code comments - where needed. For any furt
 
 ### Code Coverage
 
-![Branches](./coverage/badge-branches.svg 'Coverage - Branches') ![Branches](./coverage/badge-functions.svg 'Coverage - Functions') ![Branches](./coverage/badge-lines.svg 'Coverage - Lines') ![Branches](./coverage/badge-statements.svg 'Coverage - Statements')
+![Branches](./frontend/coverage/badge-branches.svg 'Coverage - Branches') ![Branches](./frontend/coverage/badge-functions.svg 'Coverage - Functions') ![Branches](./frontend/coverage/badge-lines.svg 'Coverage - Lines') ![Branches](./frontend/coverage/badge-statements.svg 'Coverage - Statements')
