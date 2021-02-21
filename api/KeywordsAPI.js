@@ -25,7 +25,7 @@ class KeywordsAPI extends RESTDataSource {
    */
   async getKeywords(word) {
     // Using the ml parameter to pair `Means-Like` terms
-    return this.get(`words/?ml=${word}&max=10`)
+    return this.get(`words?ml=${word}&max=10`)
   }
 }
 
